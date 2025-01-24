@@ -1,5 +1,7 @@
 # Registration EBUH
 
+![alt text](https://i.ibb.co/FBz803t/logo.png)
+
 ## Overview
 
 This project is built using modern frontend technologies, primarily **React** and **Vite**, with a variety of supporting libraries to enhance functionality and user experience.
