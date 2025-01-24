@@ -27,8 +27,8 @@ Ensure you have the following installed:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/ebuh.git
-cd ebuh
+git clone https://github.com/YuraZakaryan/ebuh-registration.git
+cd ebuh-registration
 
 # Install dependencies
 bun install
