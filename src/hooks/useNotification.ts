@@ -1,5 +1,5 @@
 import { notification } from 'antd'
-import { TNotificationType } from '../types'
+import { TNotificationType } from '@types'
 
 export const useNotification = () => {
 	const showNotification = (

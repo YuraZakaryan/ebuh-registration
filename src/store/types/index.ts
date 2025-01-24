@@ -1,4 +1,3 @@
-export type TRequestStatus = {
-	isLoading: boolean | null
-	isError: boolean | null
-}
+export * from './user'
+export * from './file'
+export * from './global'

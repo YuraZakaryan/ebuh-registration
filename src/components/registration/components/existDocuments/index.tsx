@@ -1,8 +1,8 @@
-import { useAppDispatch, useAppSelector } from '../../../../hooks/redux'
-import { setIsModalOpen } from '../../../../store/reducer/fileSlice'
-import { TUploadDocumentType } from '../../../../store/types/file'
-import { LinkButton } from './components/linkButton'
-import { StyledExistDocumentsWrapper } from './styles'
+import { useAppDispatch, useAppSelector } from '@hooks/redux.ts'
+import { setIsModalOpen } from '@store/reducer'
+import { TUploadDocumentType } from '@store/types'
+import {StyledExistDocumentsWrapper} from "./styles";
+import {LinkButton} from "./components/linkButton";
 
 export const ExistDocuments = () => {
 	const dispatch = useAppDispatch()

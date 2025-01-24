@@ -1,6 +1,6 @@
 import { Button } from 'antd'
 import styled from 'styled-components'
-import { device } from '../../../../../utils/constants'
+import { device } from '@constants/index.ts'
 
 const StyledSuccessMessageWrapper = styled.div`
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;

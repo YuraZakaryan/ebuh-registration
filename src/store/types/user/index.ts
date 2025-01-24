@@ -1,5 +1,4 @@
-import { TRequestStatus } from '..'
-import { EDocumentType, TDocumentsUploadTypePath } from '../file'
+import {TRequestStatus, EDocumentType, TDocumentsUploadTypePath} from "@store/types";
 
 export enum ERole {
 	ADMINISTRATOR = 'administrator',

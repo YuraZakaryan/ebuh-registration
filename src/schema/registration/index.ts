@@ -1,6 +1,6 @@
 import * as yup from 'yup'
-import { ERole } from '../../store/types/user'
-import { EDocumentType } from '../../store/types/file'
+import { ERole, EDocumentType } from '@store/types'
+
 const emailRegex =
 	/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/
 

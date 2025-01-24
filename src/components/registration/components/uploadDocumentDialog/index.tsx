@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react'
-import { useAppDispatch, useAppSelector } from '../../../../hooks/redux'
+import { useAppDispatch, useAppSelector } from '@hooks/redux.ts'
 import {
 	setCurrentScreen,
 	setIsModalOpen,
-} from '../../../../store/reducer/fileSlice'
-import { StyledStepContentWrapper, StyledSteps } from '../../styles'
-import { TStep } from '../../types'
-import ArrowRightIcon from './../../../../assets/icon/arrow-right.svg'
+} from '@store/reducer'
+import ArrowRightIcon from '@assets/icon/arrow-right.svg'
 import { DocumentModification } from './components/documentModification'
 import { ShowDocument } from './components/showDocument'
 import UploadDocument from './components/uploadDocument'
 import { StyledModalFooter, StyledUploadDialog } from './styles'
 import { StyledBackButton, StyledNextButton } from './styles/uploadDocument'
+import {StyledStepContentWrapper, StyledSteps} from "@components/registration/styles";
+import {TStep} from "@components/registration/types";
 
 export const UploadDocumentDialog = () => {
 	const dispatch = useAppDispatch()

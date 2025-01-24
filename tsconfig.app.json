@@ -20,7 +20,36 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@assets/*": ["assets/*"],
+      "@routes/*": ["routes/*"],
+      "@hooks/*": ["hooks/*"],
+      "@services/*": ["services/*"],
+      "@schema/*": ["schema/*"],
+
+      "@pages": ["pages/"],
+      "@pages/*": ["pages/*"],
+
+      "@layouts": ["components/layouts/"],
+      "@layouts/*": ["components/layouts/*"],
+
+      "@types": ["types/"],
+      "@types/*": ["types/*"],
+
+      "@store": ["store/"],
+      "@store/*": ["store/*"],
+
+      "@styles": ["components/styles"],
+      "@styles/*": ["components/styles/*"],
+
+      "@constants/": ["utils/constants/"],
+      "@constants/*": ["utils/constants/*"]
+    }
   },
   "include": ["src"]
 }

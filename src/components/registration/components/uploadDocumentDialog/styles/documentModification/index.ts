@@ -1,6 +1,6 @@
 import { Button, Slider } from 'antd'
 import styled from 'styled-components'
-import { device } from '../../../../../../utils/constants'
+import { device } from '@constants/index.ts'
 
 const StyledModificationWrapper = styled.div`
 	display: flex;

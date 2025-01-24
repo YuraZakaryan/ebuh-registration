@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { registrationThunk } from '../api/registrationThunk'
-import { IInitialUserState, TUser } from '../types/user'
+import { registrationThunk } from '@store/api/registrationThunk'
+import { IInitialUserState, TUser } from '@store/types'
 
 const initialState: IInitialUserState = {
 	user: null,
@@ -10,7 +10,7 @@ const initialState: IInitialUserState = {
 	},
 }
 
-const userSlice = createSlice({
+export const userSlice = createSlice({
 	name: 'user',
 	initialState,
 	reducers: {

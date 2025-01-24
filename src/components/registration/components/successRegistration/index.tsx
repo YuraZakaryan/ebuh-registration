@@ -1,8 +1,8 @@
-import { useAppDispatch } from "../../../../hooks/redux";
-import { clearUser } from "../../../../store/reducer/userSlice";
-import SuccessIcon from "./../../../../assets/icon/success.svg";
+import { useAppDispatch } from "@hooks/redux.ts";
+import { clearUser } from "@store/reducer";
+import SuccessIcon from "@assets/icon/success.svg";
 
-import LeftArrowIcon from "./../../../../assets/icon/left-arrow.svg";
+import LeftArrowIcon from "@assets/icon/left-arrow.svg";
 import {
   StyledSuccessIconWrapper,
   StyledSuccessBackButton,

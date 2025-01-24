@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import Cropper from 'react-easy-crop'
-import { useAppDispatch, useAppSelector } from '../../../../../../hooks/redux'
+import { useAppDispatch, useAppSelector } from '@hooks/redux.ts'
 import {
 	setDocumentPath,
 	toggleViewMode,
-} from '../../../../../../store/reducer/fileSlice'
-import { TCrop } from '../../../../../../types'
-import { getCroppedImg } from '../../../../../../utils/image'
+} from '@store/reducer'
+import { TCrop } from '@types'
+import { getCroppedImg } from '@/utils/image'
 import { StyledModalFooter } from '../../styles'
 import {
 	StyledCropperToolsWrapper,
@@ -17,10 +17,10 @@ import {
 	StyledToolIconWrapper,
 } from '../../styles/documentModification'
 import { StyledNextButton } from '../../styles/uploadDocument'
-import BackIcon from './../../../../../../assets/icon/back.svg'
-import ForwardIcon from './../../../../../../assets/icon/forward.svg'
-import MinusIcon from './../../../../../../assets/icon/minus.svg'
-import PlusIcon from './../../../../../../assets/icon/plus.svg'
+import BackIcon from '@assets/icon/back.svg'
+import ForwardIcon from '@assets/icon/forward.svg'
+import MinusIcon from '@assets/icon/minus.svg'
+import PlusIcon from '@assets/icon/plus.svg'
 
 export const DocumentModification = () => {
 	const dispatch = useAppDispatch()

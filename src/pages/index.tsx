@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet'
 import { useNavigate } from 'react-router-dom'
-import { StyledHomeWrapper, StyledLinkButton } from '../components/home/styles'
+import { StyledHomeWrapper, StyledLinkButton } from '@components/home/styles'
 
 const Home = () => {
 	const navigate = useNavigate()

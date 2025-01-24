@@ -1,9 +1,9 @@
 import React, { memo } from 'react'
-import { StyledAuthWrapper } from './styles'
-import { IAuthLayoutProps } from './types'
+import {StyledAuthWrapper} from "@layouts/auth/styles";
+import {IAuthLayoutProps} from "@layouts/auth/types";
 
-const AuthIntro = React.lazy(() => import('./components/intro'))
-const AuthContent = React.lazy(() => import('./components/content/'))
+const AuthIntro = React.lazy(() => import('@layouts/auth/components/intro'))
+const AuthContent = React.lazy(() => import('@layouts/auth/components/content/'))
 
 const AuthLayout: React.FC<IAuthLayoutProps> = memo(props => {
 	const { title, children } = props

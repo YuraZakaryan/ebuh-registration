@@ -1,10 +1,9 @@
 import { FileWordOutlined } from '@ant-design/icons'
 import React, { memo, useState } from 'react'
-import EyeIcon from '../../../../../../assets/icon/eye.svg'
-import RecycleIcon from '../../../../../../assets/icon/recycle.svg'
-import { useAppDispatch } from '../../../../../../hooks/redux'
-import { removePath } from '../../../../../../store/reducer/fileSlice'
-import { IShowDocumentProps } from '../../../../types'
+import EyeIcon from '@assets/icon/eye.svg'
+import RecycleIcon from '@assets/icon/recycle.svg'
+import { useAppDispatch } from '@hooks/redux.ts'
+import { removePath } from '@store/reducer'
 import {
 	StyledDocumentActionButton,
 	StyledDocumentContainer,
@@ -14,6 +13,7 @@ import {
 	StyledShowDocumentText,
 	StyledShowImage,
 } from '../../styles'
+import {IShowDocumentProps} from "@components/registration/types";
 
 export const ShowDocument: React.FC<IShowDocumentProps> = memo(props => {
 	const { path, type } = props

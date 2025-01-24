@@ -3,9 +3,9 @@ import React, { useEffect, useMemo, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 import { Helmet } from 'react-helmet'
-import { ExistDocuments } from '../../components/registration/components/existDocuments'
-import { SuccessRegistration } from '../../components/registration/components/successRegistration'
-import { UploadDocumentDialog } from '../../components/registration/components/uploadDocumentDialog'
+import { ExistDocuments } from '@components/registration/components/existDocuments'
+import { SuccessRegistration } from '@components/registration/components/successRegistration'
+import { UploadDocumentDialog } from '@components/registration/components/uploadDocumentDialog'
 import {
 	StyledPrivacyCheckbox,
 	StyledPrivacyCheckboxSpecialText,
@@ -17,22 +17,21 @@ import {
 	StyledSubmitFormButton,
 	StyledTextField,
 	StyledUploadButton,
-} from '../../components/registration/styles'
-import { TRegistrationFormValues } from '../../components/registration/types'
-import { StyledSelect } from '../../components/styles'
-import { useAppDispatch, useAppSelector } from '../../hooks/redux'
-import { useImprovedUXValidation } from '../../hooks/useImprovedUXValidation'
-import { useNotification } from '../../hooks/useNotification'
-import { registrationSchema, yupValidator } from '../../schema/registration'
-import { registrationThunk } from '../../store/api/registrationThunk'
-import { clearPaths, setIsModalOpen } from '../../store/reducer/fileSlice'
-import { EDocumentType } from '../../store/types/file'
-import { ERole } from '../../store/types/user'
-import { StyledAlert } from '../../styles'
-import SelectIcon from './../../assets/icon/icon-select.svg'
-import UploadIcon from './../../assets/icon/upload_icon.svg'
+} from '@components/registration/styles'
+import { TRegistrationFormValues } from '@components/registration/types'
+import {StyledAlert, StyledSelect} from '@styles'
+import { useAppDispatch, useAppSelector } from '@hooks/redux.ts'
+import { useImprovedUXValidation } from '@hooks/useImprovedUXValidation.ts'
+import { useNotification } from '@hooks/useNotification.ts'
+import { registrationSchema, yupValidator } from '@schema/registration'
+import { registrationThunk } from '@store/api/registrationThunk.ts'
+import { clearPaths, setIsModalOpen } from '@store/reducer/fileSlice.ts'
+import { EDocumentType } from '@store/types/file'
+import { ERole } from '@store/types/user'
+import SelectIcon from '@assets/icon/icon-select.svg'
+import UploadIcon from '@assets/icon/upload_icon.svg'
 
-const AuthLayout = React.lazy(() => import('./../../components/layouts/auth'))
+const AuthLayout = React.lazy(() => import('@components/layouts/auth'))
 
 const Registration = () => {
 	const dispatch = useAppDispatch()
@@ -46,7 +45,6 @@ const Registration = () => {
 		'documentType',
 		'documentNumber',
 	])
-
 	const [isVerified, setIsVerified] = useState<boolean>(false)
 	const [isPrivacy, setIsPrivacy] = useState<boolean>(false)
 	const [form] = Form.useForm()

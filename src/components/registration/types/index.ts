@@ -3,8 +3,8 @@ import {
 	EDocumentType,
 	TDocumentsUploadTypePath,
 	TUploadDocumentType,
-} from '../../../store/types/file'
-import { ERole } from '../../../store/types/user'
+} from '@store/types'
+import { ERole } from '@store/types'
 
 export type TRegistrationFormValues = {
 	email: string

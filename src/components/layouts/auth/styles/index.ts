@@ -1,6 +1,6 @@
 import { FormProps, Select } from 'antd'
 import styled from 'styled-components'
-import { device } from '../../../../utils/constants'
+import { device } from '@constants/index.ts'
 
 const StyledAuthWrapper = styled.div`
 	min-height: 100vh;
@@ -24,9 +24,9 @@ const StyledAuthContent = styled.div`
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 
 	@media ${device.laptopMaxM} {
+		flex: 1;
 		border-radius: 35px 35px 0 0;
 		padding: 30px 50px 10px 50px;
-		flex: 1;
 	}
 
 	@media ${device.laptopMaxM} {
@@ -71,7 +71,7 @@ const StyledAuthIntroContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	color: #ffffff;
-	font-size: 72.27px;
+	font-size: 72px;
 	font-family: 'Baloo Tammudu 2', Arial, Helvetica, sans-serif;
 	line-height: 65px;
 	font-weight: 900;
@@ -100,14 +100,14 @@ const StyledAuthIntroText = styled.div`
 `
 
 const StyledAuthIntroLogo = styled.img`
-	width: 67.99px;
-	height: 50.25px;
+	width: 68px;
+	height: 50px;
 	margin-right: 15px;
 
 	@media ${device.laptopMaxM} {
 		margin-right: 10px;
-		width: 49.73px;
-		height: 37.13px;
+		width: 50px;
+		height: 37px;
 	}
 
 	@media ${device.tabletMax} {
@@ -115,8 +115,8 @@ const StyledAuthIntroLogo = styled.img`
 	}
 
 	@media ${device.mobileMaxL} {
-		width: 28.22px;
-		height: 21.07px;
+		width: 28px;
+		height: 21px;
 	}
 `
 
@@ -126,7 +126,7 @@ const StyledAuthIntroSpecialText = styled.span`
 
 const StyledIntroLine = styled.div`
 	height: 100%;
-	width: 64.43px;
+	width: 64px;
 	background-color: #85d2f5;
 	backdrop-filter: blur(14.208148956298828px);
 	box-shadow: 0px 0px 9.57px 0px #00000040;
@@ -220,9 +220,9 @@ const StyledMainLogo = styled.div`
 	}
 
 	@media ${device.mobileMaxL} {
-		width: 95.2px;
-		height: 24.01px;
-		margin-bottom: 1.66px;
+		width: 95px;
+		height: 24px;
+		margin-bottom: 2px;
 	}
 `
 
@@ -231,24 +231,24 @@ const StyledAuthTitle = styled.h1`
 	text-align: center;
 	white-space: nowrap;
 	color: ${props => props.theme.color.primary};
-	font-weight: 400px;
+	font-weight: 600;
 
 	@media ${device.laptopMax} {
 		font-size: 34px;
-		font-weight: 600px;
+		font-weight: 600;
 		margin-bottom: 19px;
 	}
 
 	@media ${device.tabletMax} {
 		font-size: 32px;
-		font-weight: 600px;
+		font-weight: 600;
 		line-height: 40px;
 		margin-bottom: 24px;
 	}
 
 	@media ${device.mobileMaxL} {
 		font-size: 26px;
-		font-weight: 600px;
+		font-weight: 600;
 	}
 `
 
@@ -270,14 +270,13 @@ const StyledPrivacyMessage = styled.div`
 
 const StyledPrivacyMessageText = styled.p`
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
-	font-weight: 14px;
+	font-weight: 400;
 	font-size: 14px;
 	color: #98a2b3;
-	font-weight: 400;
 
 	@media ${device.mobileMaxL} {
-		font-size: 14.18px;
-		line-height: 18.24px;
+		font-size: 14px;
+		line-height: 18px;
 	}
 `
 export {

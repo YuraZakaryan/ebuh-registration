@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { AxiosError } from 'axios'
-import { TRegistrationFormValues } from '../../components/registration/types'
-import { TUser } from '../types/user'
-import { $api } from './host'
+import { TRegistrationFormValues } from '@components/registration/types'
+import {TUser} from "@store/types/user";
+import {$api} from "@store/api/host";
 
 export const registrationThunk = createAsyncThunk(
 	'user/registration',

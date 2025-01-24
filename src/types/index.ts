@@ -14,6 +14,16 @@ export type TCrop = {
 
 export type TNotificationType = 'success' | 'info' | 'warning' | 'error'
 
-export type TSVGProps = {
-	color: string
+export type TRouterPaths = '/' | '/registration'
+
+type TButtonColor = {
+	primary: string
+}
+
+type TPrimaryColor = {
+	primary: string
+	button: TButtonColor
+}
+export type TTheme = {
+	color: TPrimaryColor
 }

@@ -1,7 +1,7 @@
-import { FormProps, Select } from 'antd'
+import {Alert, FormProps, Select} from 'antd'
 import { ClipLoader } from 'react-spinners'
 import styled from 'styled-components'
-import { device } from '../../utils/constants'
+import { device } from '@constants/index'
 
 const StyledLoaderWrapper = styled.div`
 	position: absolute;
@@ -41,4 +41,29 @@ const StyledSelect = styled(Select)<FormProps>`
 	}
 `
 
-export { StyledLoader, StyledLoaderWrapper, StyledSelect }
+const StyledAlert = styled(Alert)`
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	background-color: #e6f4ff;
+	border: 1px solid #91caff;
+	max-height: 30px;
+	font-size: 12px;
+	margin-bottom: 14px;
+
+	@media ${device.laptopMaxM} {
+		margin: 22px 0 2px 0;
+		font-size: 18px;
+	}
+
+	@media ${device.tabletMax} {
+		margin: 22px 0 2px 0;
+		font-size: 16px;
+	}
+
+	@media ${device.mobileMaxL} {
+		margin: 16px 0 2px 0;
+		font-size: 14px;
+	}
+`
+
+export { StyledLoader, StyledLoaderWrapper, StyledSelect, StyledAlert }

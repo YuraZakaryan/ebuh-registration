@@ -1,18 +1,17 @@
 import React, { memo, useRef } from 'react'
-import { useAppDispatch } from '../../../../../../hooks/redux'
-import { useNotification } from '../../../../../../hooks/useNotification'
+import { useAppDispatch } from '@hooks/redux.ts'
+import { useNotification } from '@hooks/useNotification.ts'
 import {
 	setDocumentPath,
 	setTempFilePath,
 	toggleViewMode,
-} from '../../../../../../store/reducer/fileSlice'
-import { TTempFileBody } from '../../../../../../store/types/file'
+} from '@store/reducer'
+import { TTempFileBody } from '@store/types'
 import {
 	documentExtensions,
 	imageExtensions,
-} from '../../../../../../utils/constants'
-import { convertPdfToImage } from '../../../../../../utils/image'
-import { IUploadDocument } from '../../../../types'
+} from '@constants/index.ts'
+import { convertPdfToImage } from '@/utils/image'
 import {
 	StyledUploadDocumentButton,
 	StyledUploadDocumentContent,
@@ -21,7 +20,8 @@ import {
 	StyledUploadDocumentWrapper,
 	StyledUploadDragAndDropIconWrapper,
 } from '../../styles/uploadDocument'
-import UploadDragAndDropIcon from './../../../../../../assets/icon/upload_drag_and_drop.svg'
+import UploadDragAndDropIcon from '@assets/icon/upload_drag_and_drop.svg'
+import {IUploadDocument} from "@components/registration/types";
 
 const UploadDocument: React.FC<IUploadDocument> = memo(props => {
 	const { label, description, type } = props

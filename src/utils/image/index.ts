@@ -2,7 +2,8 @@ import html2canvas from 'html2canvas'
 import mammoth from 'mammoth'
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist'
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url'
-import { TCrop } from '../../types'
+import { TCrop } from '@types'
+
 GlobalWorkerOptions.workerSrc = pdfWorker
 
 const createImage = (url: string) =>

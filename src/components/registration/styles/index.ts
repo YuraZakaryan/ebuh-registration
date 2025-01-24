@@ -1,7 +1,7 @@
-import { Button, Checkbox, Form, FormProps, Input, Select, Steps } from 'antd'
+import { Button, Checkbox, Form, FormProps, Input, Steps } from 'antd'
 import styled from 'styled-components'
-import { device } from '../../../utils/constants'
-import { TRegistrationFormValues } from '../types'
+import { device } from '@constants/index.ts'
+import {TRegistrationFormValues} from "@components/registration/types";
 
 const StyledRegistrationForm = styled(Form)<FormProps<TRegistrationFormValues>>`
 	display: flex;
@@ -12,14 +12,13 @@ const StyledRegistrationFormItem = styled(Form.Item)`
 	width: 100%;
 
 	& label {
-		font-family: 'Poppins' !important;
+		font-family: 'Poppins', sans-serif !important;
 		font-weight: 400;
 		font-size: 16px;
 	}
 
 	@media ${device.laptopMaxM} {
-		margin: 0;
-		margin-top: 24px;
+		margin: 24px 0 0;
 
 		& label {
 			font-size: 18px !important;
@@ -27,8 +26,7 @@ const StyledRegistrationFormItem = styled(Form.Item)`
 	}
 
 	@media ${device.mobileMaxL} {
-		margin: 0;
-		margin-top: 8px;
+		margin: 8px 0 0;
 	}
 `
 
@@ -45,9 +43,6 @@ const StyledTextField = styled(Input)`
 	}
 `
 
-const StyledRoleSelect = styled(Select)``
-const StyledDocumentTypeSelect = styled(Select)``
-
 const StyledRegistrationFormItemsWrapper = styled.div`
 	display: flex;
 	align-items: center;
@@ -60,7 +55,7 @@ const StyledRegistrationFormItemsWrapper = styled.div`
 `
 
 const StyledUploadButton = styled(Button)`
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	max-height: 40px;
@@ -87,7 +82,7 @@ const StyledUploadButton = styled(Button)`
 `
 
 const StyledPrivacyCheckbox = styled(Checkbox)`
-	font-family: 'Poppins' !important;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 400;
 	font-size: 14px;
 
@@ -133,7 +128,7 @@ const StyledReCaptchaWrapper = styled.div`
 `
 
 const StyledSubmitFormButton = styled(Button)`
-	font-family: 'Poppins' !important;
+	font-family: 'Poppins', sans-serif !important;
 	font-weight: 400;
 	background-color: #0ba5ec;
 	padding: 20px 0;
@@ -185,7 +180,6 @@ const StyledSteps = styled(Steps)`
 `
 
 export {
-	StyledDocumentTypeSelect,
 	StyledPrivacyCheckbox,
 	StyledPrivacyCheckboxSpecialText,
 	StyledPrivacyText,
@@ -193,7 +187,6 @@ export {
 	StyledRegistrationForm,
 	StyledRegistrationFormItem,
 	StyledRegistrationFormItemsWrapper,
-	StyledRoleSelect,
 	StyledStepContentWrapper,
 	StyledSteps,
 	StyledSubmitFormButton,

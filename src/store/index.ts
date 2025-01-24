@@ -1,10 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import { fileReducer } from './reducer/fileSlice'
-import { userReducer } from './reducer/userSlice'
+import {fileReducer, fileSlice, userReducer, userSlice} from "@store/reducer";
 
 const rootReducer = combineReducers({
-	user: userReducer,
-	file: fileReducer,
+	[userSlice.name]: userReducer,
+	[fileSlice.name]: fileReducer,
 })
 
 export const store = () =>
