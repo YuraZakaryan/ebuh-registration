@@ -14,6 +14,8 @@ This project is built using modern frontend technologies, primarily **React** an
 - **Routing:** React Router DOM
 - **Form Validation:** Yup
 - **Document Handling:** React Doc Viewer, Mammoth, Docx-preview
+- **Code Linting:** ESLint
+- **Code Formatting:** Prettier
 
 ## Prerequisites
 
