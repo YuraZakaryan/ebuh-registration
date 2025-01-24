@@ -1,2 +1,2 @@
-export * from './fileSlice.ts'
-export * from './userSlice.ts'
+export * from './fileSlice.ts';
+export * from './userSlice.ts';

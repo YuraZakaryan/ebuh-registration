@@ -1,0 +1,8 @@
+*.html
+node_modules/
+internals/generators/
+internals/scripts/
+package-lock.json
+bun.lockb
+package.json
+coverage

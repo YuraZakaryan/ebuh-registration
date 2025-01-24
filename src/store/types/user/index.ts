@@ -1,24 +1,28 @@
-import {TRequestStatus, EDocumentType, TDocumentsUploadTypePath} from "@store/types";
+import {
+  TRequestStatus,
+  EDocumentType,
+  TDocumentsUploadTypePath,
+} from '@store/types';
 
 export enum ERole {
-	ADMINISTRATOR = 'administrator',
-	STUDENT = 'student',
-	EDUCATOR = 'educator',
-	PARENT = 'parent',
+  ADMINISTRATOR = 'administrator',
+  STUDENT = 'student',
+  EDUCATOR = 'educator',
+  PARENT = 'parent',
 }
 
 export type TUser = {
-	id: string
-	email: string
-	firstName: string
-	lastName: string
-	role: ERole | null
-	documentType: EDocumentType | null
-	documentNumber: string
-	documents: TDocumentsUploadTypePath
-}
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  role: ERole | null;
+  documentType: EDocumentType | null;
+  documentNumber: string;
+  documents: TDocumentsUploadTypePath;
+};
 
 export interface IInitialUserState {
-	user: TUser | null
-	registration: TRequestStatus
+  user: TUser | null;
+  registration: TRequestStatus;
 }

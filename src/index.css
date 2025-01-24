@@ -1,90 +1,90 @@
 @font-face {
-	font-display: swap;
-	font-family: 'Baloo Tammudu 2';
-	font-style: normal;
-	font-weight: 400;
-	src: url('./assets/fonts/baloo-tammudu-2-v23-latin-regular.woff2')
-		format('woff2');
+  font-display: swap;
+  font-family: 'Baloo Tammudu 2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/baloo-tammudu-2-v23-latin-regular.woff2')
+    format('woff2');
 }
 
 @font-face {
-	font-display: swap;
-	font-family: 'Baloo Tammudu 2';
-	font-style: normal;
-	font-weight: 500;
-	src: url('./assets/fonts/baloo-tammudu-2-v23-latin-500.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Baloo Tammudu 2';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/baloo-tammudu-2-v23-latin-500.woff2') format('woff2');
 }
 
 @font-face {
-	font-display: swap;
-	font-family: 'Baloo Tammudu 2';
-	font-style: normal;
-	font-weight: 800;
-	src: url('./assets/fonts/baloo-tammudu-2-v23-latin-800.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Baloo Tammudu 2';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/baloo-tammudu-2-v23-latin-800.woff2') format('woff2');
 }
 
 @font-face {
-	font-display: swap;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	src: url('./assets/fonts/poppins-v22-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/poppins-v22-latin-regular.woff2') format('woff2');
 }
 @font-face {
-	font-display: swap;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 500;
-	src: url('./assets/fonts/poppins-v22-latin-500.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/poppins-v22-latin-500.woff2') format('woff2');
 }
 @font-face {
-	font-display: swap;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 700;
-	src: url('./assets/fonts/poppins-v22-latin-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/poppins-v22-latin-700.woff2') format('woff2');
 }
 @font-face {
-	font-display: swap;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 900;
-	src: url('./assets/fonts/poppins-v22-latin-900.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/poppins-v22-latin-900.woff2') format('woff2');
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-	color: inherit;
-	text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 a:hover,
 a:focus,
 a:visited {
-	color: inherit;
+  color: inherit;
 }
 
 .ant-image-mask {
-	display: none !important;
+  display: none !important;
 }
 
 .ant-select-item-option-content {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .ant-modal-wrap {
-	background: rgba(0, 134, 201, 0.1);
+  background: rgba(0, 134, 201, 0.1);
 }
 
 .ant-modal-footer {
-	display: none;
+  display: none;
 }
 
 .ant-modal-centered {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }

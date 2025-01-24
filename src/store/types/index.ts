@@ -1,3 +1,3 @@
-export * from './user'
-export * from './file'
-export * from './global'
+export * from './user';
+export * from './file';
+export * from './global';

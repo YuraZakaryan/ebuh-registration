@@ -1,14 +1,14 @@
-import { useAppDispatch } from "@hooks/redux.ts";
-import { clearUser } from "@store/reducer";
-import SuccessIcon from "@assets/icon/success.svg";
+import { useAppDispatch } from '@hooks/redux.ts';
+import { clearUser } from '@store/reducer';
+import SuccessIcon from '@assets/icon/success.svg';
 
-import LeftArrowIcon from "@assets/icon/left-arrow.svg";
+import LeftArrowIcon from '@assets/icon/left-arrow.svg';
 import {
   StyledSuccessIconWrapper,
   StyledSuccessBackButton,
   StyledSuccessMessage,
   StyledSuccessMessageWrapper,
-} from "./styles";
+} from './styles';
 
 export const SuccessRegistration = () => {
   const dispatch = useAppDispatch();
@@ -26,7 +26,11 @@ export const SuccessRegistration = () => {
         We're preparing your account. Soon, an email verifying your registration
         will be sent to you.
       </StyledSuccessMessage>
-      <StyledSuccessBackButton icon={<LeftArrowIcon />} iconPosition="start" onClick={handleBack}>
+      <StyledSuccessBackButton
+        icon={<LeftArrowIcon />}
+        iconPosition="start"
+        onClick={handleBack}
+      >
         Back to Sign In
       </StyledSuccessBackButton>
     </StyledSuccessMessageWrapper>

@@ -1,9 +1,9 @@
 class DateService {
-	static getCurrentYear() {
-		const date = new Date()
+  static getCurrentYear() {
+    const date = new Date();
 
-		return date.getFullYear()
-	}
+    return date.getFullYear();
+  }
 }
 
-export {DateService}
+export { DateService };

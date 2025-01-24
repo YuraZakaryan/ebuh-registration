@@ -1,12 +1,12 @@
-import {TTheme} from "@types";
+import { TTheme } from '@types';
 
 const theme = {
-    color: {
-        primary: '#344054',
-        button: {
-            primary: '#0BA5EC',
-        },
+  color: {
+    primary: '#344054',
+    button: {
+      primary: '#0BA5EC',
     },
-} as TTheme
+  },
+} as TTheme;
 
-export {theme}
+export { theme };
