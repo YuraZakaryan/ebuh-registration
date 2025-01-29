@@ -44,3 +44,15 @@ export const device = {
 
 export const imageExtensions: string[] = ['jpg', 'jpeg', 'png'];
 export const documentExtensions: string[] = ['pdf', 'doc', 'docx'];
+export const paginationOptions: string[] = [
+  '10',
+  '20',
+  '30',
+  '40',
+  '50',
+  '100',
+  '200',
+  '300',
+  '400',
+  '500',
+];

@@ -1,7 +1,8 @@
+import { IStyledFlexWrapperProps } from '@/types'
+import { device } from '@constants/index';
 import { Alert, FormProps, Select } from 'antd';
 import { ClipLoader } from 'react-spinners';
 import styled from 'styled-components';
-import { device } from '@constants/index';
 
 const StyledLoaderWrapper = styled.div`
   position: absolute;
@@ -66,4 +67,16 @@ const StyledAlert = styled(Alert)`
   }
 `;
 
-export { StyledLoader, StyledLoaderWrapper, StyledSelect, StyledAlert };
+const StyledFlexWrapper = styled.div<IStyledFlexWrapperProps>`
+  display: flex;
+  justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
+  align-items: ${({ alignItems }) => alignItems || 'stretch'};
+`;
+
+export {
+  StyledAlert,
+  StyledFlexWrapper,
+  StyledLoader,
+  StyledLoaderWrapper,
+  StyledSelect,
+};

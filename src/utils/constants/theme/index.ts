@@ -5,6 +5,7 @@ const theme = {
     primary: '#344054',
     button: {
       primary: '#0BA5EC',
+      secondary: '#344054',
     },
   },
 } as TTheme;

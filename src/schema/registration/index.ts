@@ -58,6 +58,13 @@ const registrationSchema = yup.object().shape({
     }),
 });
 
+const addTranslationSchema = yup.object().shape({
+  english: yup
+    .string()
+    .required('English translation is required')
+    .min(1, 'English translation cannot be empty'),
+});
+
 const yupValidator = <T extends yup.AnyObject>(
   schema: yup.ObjectSchema<T>,
   getFieldsValue: () => T
@@ -68,4 +75,4 @@ const yupValidator = <T extends yup.AnyObject>(
   },
 });
 
-export { registrationSchema, yupValidator };
+export { registrationSchema, addTranslationSchema, yupValidator };

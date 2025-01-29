@@ -8,4 +8,8 @@ export const $api = axios.create({
   timeout: 10000,
 });
 
+export const $edusHost = axios.create({
+  baseURL: 'http://apidev.edusystems.am' + '/api',
+});
+
 $api.interceptors.request.use();

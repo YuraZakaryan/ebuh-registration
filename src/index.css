@@ -68,6 +68,13 @@ a:visited {
   color: inherit;
 }
 
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .ant-image-mask {
   display: none !important;
 }
@@ -87,4 +94,8 @@ a:visited {
 .ant-modal-centered {
   display: flex;
   align-items: center;
+}
+
+.ant-popover-arrow {
+  display: none !important;
 }
